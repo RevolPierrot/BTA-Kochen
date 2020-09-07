@@ -1,4 +1,34 @@
-body{
-   background-color: red;
-   font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+} /*...alternativ kann man hier auch li ansprechen statt ul*/
+
+@media (min-width: 960px) {
+  ul {
+    display: flex
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .hidden {
+    display: block;
+  }
+}
+
+#burger {
+  display: none;
 }
