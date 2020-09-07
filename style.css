@@ -1,34 +1,29 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+} 
 a {
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-ul {
-  list-style-type: none;
-} /*...alternativ kann man hier auch li ansprechen statt ul*/
-
-@media (min-width: 960px) {
-  ul {
-    display: flex
-  }
-}
-
+  text-transform: uppercase; text-decoration: none; color: #584545; font-weight: bold;
+} 
+li {
+  list-style-type: none; text-align: center;
+} 
 .hidden {
-  display: none;
+  display: none; 
+} 
+
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 60em) { 
   .hidden {
-    display: block;
-  }
-}
-
-#burger {
-  display: none;
+    display: block; 
+  } 
+  #burger {
+    display: none; 
+  } 
+  nav ul {
+    display: flex;
+  } 
 }
