@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #584545;
+    font-weight: bold;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 10px;
+}
+  
+ul li a:hover {
+    color: white;
+    background-color: #374a67;
+}
+  
+.hidden {
+    display: none;
+}
+  
+.show {
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+  
+#burger {
+    background-color: white; /*...alternativ hier auch transparent*/
+    border: none;
+}
+
+.sec1 {
+    margin: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+#pic {
+    height: 340px;
+    width: auto;
+    margin-inline-end: 20px;
+    border: #04122B;
+    border-width: 5px;
+}
+
+.recipe {
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.h2 {
+    text-align: center;
+    margin-top: -18px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ol {
+    list-style-position: outside;
+}
+
+.lol {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aside {
+    background-color: #04122B;
+    color: white;
+    text-align: center;
+    padding: 64px 16px; /*Schnellfassung für oben und unten 16px, recht und links 64px*/
+  }
+  
+  aside input, button { /*alterntiv natürlich auch form statt aside*/
+    border-radius: 5px;
+    padding: 16px;
+  }
+  
+  form button {
+    color: #333;
+    text-transform: uppercase;
+    margin-left: -5px;
+    transition: 0.375s;
+    padding: 16px;
+  }
+  
+  button:hover {
+    background-color: #374a67;
+    color: #fff;
+    border: 2px solid white;
+  }
+  
+  .footer {
+    display: block;
+    justify-content: space-between;
+    padding: 58px 5%;
+  }
+
+@media (min-width: 60em) {
+    .hidden {
+      display: block;
+    }
+    #burger {
+      display: none;
+    }
+    nav ul {
+      display: flex;
+    }
+}

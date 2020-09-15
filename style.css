@@ -1,29 +1,182 @@
-body { 
-  font-family: Arial, Helvetica, sans-serif; 
-} 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
 a {
-  text-transform: uppercase; text-decoration: none; color: #584545; font-weight: bold;
-} 
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #584545;
+  font-weight: bold;
+}
 li {
-  list-style-type: none; text-align: center; padding: 10px;
-} 
+  list-style-type: none;
+  text-align: center;
+  margin: 0 10px; /*'0 10px' heißt oben und unten 0, an den Seiten 10px.*/
+  /*...oder auch paddding - ODER ul {margin/padding}.*/
+}
+
+li a:hover {
+  color: white;
+  background-color: #374a67;
+}
+
 .hidden {
-  display: none; 
-} 
+  display: none;
+}
+
+/*.show muss unter .hidden stehen, sonst funktionierts nicht*/
+.show {
+  display: block;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-@media (min-width: 60em) { 
+#burger {
+  background-color: white; /*...alternativ hier auch transparent*/
+  border: none;
+}
+
+#hero {
+  background-image: url('img/intro.jpg'); /*...auch so bekommt man Bilder in den Hintergrund, alternativ zu Ebenen*/
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /*behält die Proportionen bei, egal wie groß der Screen ist - orientiert sich am Mittelpunkt*/
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*'#hero h1, p' auch möglich, wenn man nur h1 und p ansprechen will*/
+
+.btn {
+  background-color: white;
+  padding: 16px;
+  border: 2px solid #374a67;
+  border-radius: 5px 5px 5px 5px; /*wenn man nur einen Wert eingibt, werden die für alle Ecken genommen*/
+  display: inline-block;
+  margin-top: 8px;
+  transition: 0.375s; /* ... man kann u.a. auch einstellen, was sich in der Zeit ändert - z.B. 'transition: color 0.375s;'*/
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  background-color: #374a67;
+  color: #fff;
+  border: 2px solid white;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.card {
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  text-align: center;
+  margin: 8px;
+}
+
+.card img {
+  width: 100%; /*oder aber alle images in .card eine Klasse zuweisen*/
+}
+
+.button-blue {
+  background-color: #374a67;
+  color: white;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: 0.375s;
+}
+
+.button-blue:hover {
+  background-color: white;
+  color: #374a67;
+  border: 2px solid #374a67;
+}
+
+.card p {
+  color: #828282;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.3);
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aside {
+  background-color: #04122B;
+  color: white;
+  text-align: center;
+  padding: 64px 16px; /*Schnellfassung für oben und unten 16px, recht und links 64px*/
+}
+
+aside input, button { /*alterntiv natürlich auch form statt aside*/
+  border-radius: 5px;
+  padding: 16px;
+}
+
+form button {
+  color: #333;
+  text-transform: uppercase;
+  margin-left: -5px;
+  transition: 0.375s;
+  padding: 16px;
+}
+
+button:hover {
+  background-color: #374a67;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.footer {
+  display: block;
+  justify-content: space-between;
+  padding: 58px 5%;
+}
+
+
+@media (min-width: 60em) {
   .hidden {
-    display: block; 
-  } 
+    display: block;
+  }
   #burger {
-    display: none; 
-  } 
+    display: none;
+  }
   nav ul {
     display: flex;
-  } 
+  }
+
+  .row {
+    display: block;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

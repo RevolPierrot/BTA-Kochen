@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <!--Das ist ein Kommentar-->
-    <meta charset="UTF-8">
+    <!--Das ist ein Kommentar-->
+    <meta charset="UTF-8" />
     <title>BTA-Kochen</title>
     <meta name="description" content="djdk ndjkjdk jkdjk" />
-    <meta 
-      name="viewpoint" 
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/icons.css"> <!--wichtig, vor dem Verlinken hier nicht das 'fonts/' vergessen, da das file ja in diesem Ordner liegt.-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> <!--Font von Google, liegt bei Google - hat also Einfluss auf die Datenschutzerklrung!-->
   </head>
 
   <body>
     <header>
       <a href="#">
-        <img src="img/logo.png" alt="Logo Kochen BTA" height="40">
+        <img src="img/logo.png" alt="Logo Kochen BTA" height="40" />
       </a>
 
       <button id="burger">
-        <img src="img/menu.svg" alt="zum Hauptmenü" height="40">
+        <img src="img/menu.svg" alt="zum Hauptmenü" height="40" />
       </button>
-     
+
       <nav class="hidden">
         <ul>
           <li>
@@ -39,5 +39,88 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="hero">
+        <div>
+          <h1>Die besten Rezepte für Webworker</h1>
+          <p>Es gibt mehr als Pizza und Ravioli</p>´
+          <a href="#rezepte" class="btn">Entdecke die Leckereien</a>
+        </div>
+      </section>
+
+      </section id="rezepte">
+        <h2>Die neusten Rezepte</h2>
+          <div class="row">
+            <div class="card"> <!--anstatt div geht hier auch article: ein Element, dass für sich stehenden, individuelle Inhalte beschreibt-->
+              <img src="img/burger.jpg" alt="Burger">
+              <h3>Total leckerer Burger</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem at quidem dolorem hic veritatis quis doloremque aliquid...</p>
+              <a href="sub_index.html" class="btn button-blue">Zum Rezept</a>
+            </div>
+            <div class="card"> 
+              <img src="img/burger.jpg" alt="Burger">
+              <h3>Total leckerer Burger</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem at quidem dolorem hic veritatis quis doloremque aliquid...</p>
+              <a href="sub_index.html" class="btn button-blue">Zum Rezept</a>
+            </div>
+            <div class="card"> 
+              <img src="img/burger.jpg" alt="Burger">
+              <h3>Total leckerer Burger</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem at quidem dolorem hic veritatis quis doloremque aliquid...</p>
+              <a href="sub_index.html" class="btn button-blue">Zum Rezept</a>
+            </div>
+            <div class="card"> 
+              <img src="img/burger.jpg" alt="Burger">
+              <h3>Total leckerer Burger</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem at quidem dolorem hic veritatis quis doloremque aliquid...</p>
+              <a href="sub_index.html" class="btn button-blue">Zum Rezept</a>
+            </div>
+          </div>
+      <section>
+    </main>
+
+    <aside>
+      <div class="aside">
+        <p>Kein Rezept mehr verpassen</p>
+        <p>Hol dir unseren Newsletter</p>
+        <form action="" method="post"> <!--'post' und 'get': bei post erscheint die eingegebene Email nicht in der URL, bei get schon-->
+          <input type="email" name="email" id="email" placeholder="Deine Emailadresse"> <!--verschiedene Möglichkeiten; bei type="password" erscheinen z.B. Punkte statt Buchstaben im Eingabefeld.-->
+          <button type="submit">Abonnieren</button>
+        </form>
+    </div>
+    </aside>
+
+    <footer>
+      <div class="footer">
+        <nav class="nav-left">
+          <ul>
+            <li>
+              <a href="#">Impressum</a>
+            </li>
+            <li>
+              <a href="#">Datenschutz</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="nav-right">
+          <ul>
+            <li class="icon-facebook">
+              <a href="https://www.facebook.com" target="_blank"></a>
+            </li>
+            <li class="icon-instagram">
+              <a href="https://www.instagram.com" target="_blank"></a>
+            </li>
+            <li class="icon-youtube">
+              <a href="https://www.youtube.com" target="_blank"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  <script src="js/menu.js"></script>
   </body>
 </html>
